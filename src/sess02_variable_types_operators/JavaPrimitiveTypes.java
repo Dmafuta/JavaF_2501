@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package sess02_variable_types_operators;
 
 /**
@@ -65,7 +61,7 @@ public class JavaPrimitiveTypes {
         System.out.printf("%-10s %-25s %-25s\n", "", "(Smallest positive: " + Float.MIN_NORMAL + ")", "(Note: MIN_VALUE is subnormal)");
         System.out.printf("%-10s %-25e %-25e%n", "double", Double.MIN_VALUE, Double.MAX_VALUE);
         System.out.printf("%-10s %-25s %-25s\n", "", "(Smallest positive: " + Double.MIN_NORMAL + ")", "");
-        System.out.printf("%-10s U+%04X to U+%04X\n", "char", (int) Character.MIN_VALUE, (int) Character.MAX_VALUE);
+        System.out.printf("%-10s U+%04X to U+%04X\n", "char", (int)Character.MIN_VALUE, (int)Character.MAX_VALUE);
        
     }
 }
