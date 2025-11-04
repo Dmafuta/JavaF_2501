@@ -21,7 +21,7 @@ public class StudentGrading {
         // Variables to be used in the program
         int scores[] = new int[4];
         int numOfModules = 4;
-        int averageScore = 0; // Initialize the average score to zero
+        double averageScore = 0.0; // Initialize the average score to zero
         
         // String array to store the name of Modules / Subjects
         String[] moduleNames = new String[numOfModules];
@@ -31,26 +31,32 @@ public class StudentGrading {
         {
             
             System.out.printf("Please enter the name of module: ");
-            moduleNames[i] = sc.nextLine();
+            moduleNames[i] = sc.nextLine().trim();
             System.out.println("-".repeat(45));
         }
     
         System.out.printf("=".repeat(45));
-        System.out.printf("Read in the Scores for each module%n");
+        System.out.printf("%nRead in the Scores for each module%n");
         System.out.println("=".repeat(45)); 
-        for(String s: moduleNames) // Iterate over the array of Modules/Subjects           
+        //for(String s: moduleNames) // Iterate over the array of Modules/Subjects           
             
         // read in scores for each module     
-        for(int j = 1; j < numOfModules - 2; j++)
+        for(int i = 1; i < numOfModules - 2; i++)
         {
-//            int totalScore = 0;
-            System.out.printf("Please enter score for %s: ", s);
-            scores[j] = sc.nextInt();
-            System.out.println("-".repeat(45));
+            //int totalScore = 0;
+            // System.out.printf("Please enter score for %s: ", s);
+            System.out.println("");
+            scores[i] = sc.nextInt();
+            //System.out.println("-".repeat(45));
+            while(scores[i] < 0 || scores > 100)
+            {
+                System.out.println("Invalid score, Please enter a score between 0 - 100");
+                System.out.println("");
+            }
             
-//            totalScore = sc.nextInt();
-//            totalScore += scores[j];
-//            System.out.printf("%d", totalScore);
+            totalScore = sc.nextInt();
+            totalScore += scores[i];
+            System.out.printf("%d", totalScore);
         }
     sc.close();
     }   
