@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaF_2501.iml" filepath="$PROJECT_DIR$/JavaF_2501.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOP_SelfStudy/OOP_SelfStudy.iml" filepath="$PROJECT_DIR$/OOP_SelfStudy/OOP_SelfStudy.iml" />
+    </modules>
+  </component>
+</project>
