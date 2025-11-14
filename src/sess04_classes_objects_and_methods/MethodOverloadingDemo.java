@@ -10,7 +10,7 @@ public class MethodOverloadingDemo {
         // Variable to be used in the program
         int firstNum = 3, secondNum = 5, thirdNum = 7, fourthNum = 8;
         byte firstByte = 4;
-        long answer;
+        long answer=5;
         
         MethodOverloading ml = new MethodOverloading();       
         // Add two integers and display their sum
