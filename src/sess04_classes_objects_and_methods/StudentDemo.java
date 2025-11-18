@@ -13,7 +13,8 @@ public class StudentDemo {
         s1.initialiseStudent();
         
         // Display the student's details
-        s1.displayDetails();
+        // s1.displayDetails();
+        System.out.println(s1);
     }
     
 }

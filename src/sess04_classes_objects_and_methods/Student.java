@@ -37,5 +37,19 @@ public class Student {
         System.out.println("Student gender" + (this.gender == 'm' || 
                 this.gender == 'M'? "Male" : "Female"));
         System.out.println("-".repeat(50));
+        
+        
+    }
+
+    @Override
+    public String toString() {
+        return "Student Details\n" 
+                + "-".repeat(50)
+                + "\nStudent's ID: " + this.studentID
+                + "\nStudent's name: " + this.name
+                + "\nStudent's age: " + this.age
+                + "\nStudent gender" + (this.gender == 'm' || 
+                this.gender == 'M'? "Male\n" : "Female\n")
+                + "-".repeat(50);
     }
 }
