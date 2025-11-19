@@ -5,7 +5,7 @@ package sess07_inheritance_and_polymophism;
  * methods to compare its area and perimeter
  * @author Administrator
  */
-public class Rectangle {
+public class Rectangle extends Shape{
     // ===========================================
     // Instance fields
     // ===========================================
@@ -24,7 +24,7 @@ public class Rectangle {
     // ============================================
 
     /**
-     * Returns the lenth of the rectangle (in units)
+     * Returns the length of the rectangle (in units)
      * @return the length
      */
     public int getLength() {return length;}
@@ -32,16 +32,12 @@ public class Rectangle {
     /**
      * @param length the length to set
      */
-    public void setLength(int length) {
-        this.length = length;
-    }
+    public void setLength(int length) {this.length = length;}
 
     /**
      * @return the width
      */
-    public int getWidth() {
-        return width;
-    }
+    public int getWidth() {return width;}
 
     /**
      * @param width the width to set
@@ -72,22 +68,18 @@ public class Rectangle {
      */
     public long calcArea() {return length * width;}
 
-    public long calcPerimeter() {
-        return 2* (length + width);}
+    public long calcPerimeter() {return 2* (length + width);}
        
     // ==============================================
     // Overriden methods
     // ==============================================
     @Override
-    public String getName()
-    {
-        return this.name;
-    }
+    public String getName(){return this.name;}
     
     @Override
     public String toString()
     {
-        return this.getName() +"Details"
+        return this.getName() +" Details"
                 + "\n" + "-".repeat(50)
                 +"\n Length: " + this.length 
                 +"\n Width: " + this.width
