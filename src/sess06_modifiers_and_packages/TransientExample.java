@@ -26,7 +26,7 @@ public class TransientExample {
         {
             oos.writeObject(user1);
         }
-        catch(IOExeption ioe)
+        catch(IOException ioe)
         {
             System.err.println("The error: " + ioe.getLocalizedMessage() + " occured!");
         }
