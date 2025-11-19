@@ -65,7 +65,7 @@ public class Cuboid extends Rectangle
     @Override
     public String toString()
     {
-        return this.getName() +"Details"
+        return this.getName() +" Details"
                 + "\n" + "-".repeat(50)
                 +"\n Length: " + this.length 
                 +"\n Width: " + this.width
