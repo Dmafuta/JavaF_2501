@@ -3,7 +3,7 @@ package sess07_inheritance_and_polymophism;
 public class Circle extends Shape{
 
     // Instance Variable specific for the circle
-    protected final float PI = 22/7F;
+    protected float PI = 22/7F;
     protected int radius;
     protected String name;
 
@@ -44,15 +44,11 @@ public class Circle extends Shape{
     }
 
     // Instance Methods
-
     /**
      * Formulae to calculate the Area of the circle
      * @return the Area of the circle
      */
-    public float calcCircleArea()
-    {
-        return PI * radius * radius;
-    }
+    public float calcCircleArea() {return PI * (float)Math.pow(radius, 2);}
 
     /**
      * Formulae to calculate the Perimeter of the circle

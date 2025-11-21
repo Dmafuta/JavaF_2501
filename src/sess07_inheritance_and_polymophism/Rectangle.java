@@ -1,7 +1,7 @@
 package sess07_inheritance_and_polymophism;
 
 /**
- * The {} class represents a 2D rectangle with its length and width. It provides 
+ * The {@code Rectangle} class represents a 2D rectangle with its length and width. It provides
  * methods to compare its area and perimeter
  * @author Administrator
  */
@@ -22,7 +22,6 @@ public class Rectangle extends Shape{
     // ============================================
     // Getters and Setters
     // ============================================
-
     /**
      * Returns the length of the rectangle (in units)
      * @return the length
@@ -35,6 +34,7 @@ public class Rectangle extends Shape{
     public void setLength(int length) {this.length = length;}
 
     /**
+     * Returns the width of the Rectangle (in units)
      * @return the width
      */
     public int getWidth() {return width;}
@@ -61,17 +61,20 @@ public class Rectangle extends Shape{
     // ==============================================
     // Instance methods
     // ==============================================
-    
     /**
-     * Calculates and returns the rectangle's area (in square units)
-     * @return 
+     * Calculates and returns the Rectangle's area (in square units)
+     * @return area of the Rectangle
      */
     public long calcArea() {return length * width;}
 
+    /**
+     * Calculates and returns the Perimeter of the Rectangle
+     * @return Perimeter of the Rectangle
+     */
     public long calcPerimeter() {return 2* (length + width);}
        
     // ==============================================
-    // Overriden methods
+    // Overridden methods
     // ==============================================
     @Override
     public String getName(){return this.name;}

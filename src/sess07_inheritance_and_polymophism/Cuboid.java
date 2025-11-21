@@ -18,7 +18,6 @@ public class Cuboid extends Rectangle
     // ============================================
     // Getters and Setters
     // ============================================
-
     /**
      * Returns the breadth of the cuboid (in units)
      * @return the breadth
@@ -47,7 +46,6 @@ public class Cuboid extends Rectangle
     // ==============================================
     // Instance methods
     // ==============================================
-    
     /**
      * Calculates and returns the Cuboid surface area (in square units)
      * @return the cuboid's area (in square units)
@@ -57,10 +55,10 @@ public class Cuboid extends Rectangle
     }
 
     private long calcVolume() {
-        return calcArea();}
+        return calcArea() * breadth;}
        
     // ==============================================
-    // Overriden methods
+    // Overridden methods
     // ==============================================
     @Override
     public String toString()
